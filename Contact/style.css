@@ -1,0 +1,93 @@
+:root {
+    
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    display: inline-block;
+}
+/* General styling */
+.center-in {
+    text-align: center;
+}
+.center-out {
+    margin-inline: auto;
+}
+.capital {
+    text-transform: uppercase;
+}
+.round-border {
+    border-radius: 50%;
+    /* width: 5em; */
+}
+/* Share */
+.small-border {
+    width: 2.5em;
+    height: .2em;
+    border-radius: 5em;
+    background-color: aquamarine;
+}
+/* end */
+header {
+    display: grid;
+    place-content: center;
+    gap: .5rem;
+    color: #f4f4f4;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightskyblue;
+    width: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5em;
+    width: 50em;
+}
+form {
+    /* border: 1px solid red; */
+    /* padding: 1em; */
+    display: grid;
+    gap: 1.5rem;
+}
+.flex- {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+input, textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    color: #fff;
+    background-color: blue;
+}
+input:focus,
+textarea:focus {
+    border: none;
+    outline: none;
+}
+button {
+    margin-top: 2em;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    width: min(90%, 15em);
+    padding: 1em;
+    color: #fff;
+}
+/* Contact section */

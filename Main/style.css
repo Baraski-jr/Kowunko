@@ -1,0 +1,216 @@
+:root {
+    
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    display: inline-block;
+}
+/* General styling */
+.center-in {
+    text-align: center;
+}
+.center-out {
+    margin-inline: auto;
+}
+.capital {
+    text-transform: uppercase;
+}
+.round-border {
+    border-radius: 50%;
+    /* width: 5em; */
+}
+/* .limited-width {
+    width: min(90em, 90%);
+} */
+/* Remove the default styling of elements */
+/* list */
+li {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.small-border {
+    width: 2.5em;
+    height: .2em;
+    border-radius: 5em;
+    background-color: aquamarine;
+}
+/* end */
+.bg-image {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    z-index: -1;
+}
+.primary-hea {
+    position: relative;
+}
+/* background image */
+.primary-hea, .bg-image, .mission{
+    height: 100vh;
+}
+/* Navigation Menue */
+.primary-header {
+    gap: 1em;
+    background-color: #fff;
+    padding: 1.5em 2.5rem;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    /* border: 2px solid red; */
+}
+.primary-header,
+.primary-header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.primary-header-nav {
+    gap: 2em;
+    width: 80%;
+}
+.primary-nav,
+.secondary-nav {
+    display: flex;
+    gap: 1rem;
+}
+.primary-nav {
+    width: 80%;
+    gap: 2em;
+}
+.secondary-nav {
+    width: 10%;
+    /* border: 2px solid blue; */
+    justify-content: space-between;
+}
+/* Nav end */
+.hero, .wrapper {
+    height: 100vh;
+}
+.hero {
+    width: 100%;
+    color: #f4f4f4;
+    background: hsl(0 0% 0% / .5);
+}
+.wrapper {
+    width: min(90em, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 50%;
+}
+.main-title {
+    line-height: 1.2;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+/* Buttons */
+.flex-buttons {
+    display: flex;
+    gap: 2rem;
+}
+button {
+    border-radius: 5px;
+    background-color: orange;
+    color: #fff;
+    padding-block: 1em;
+    border: none;
+    text-align: center;
+    width: 15rem;
+    font-size: 1rem;
+}
+button:hover {
+    opacity: .8;
+}
+/* landing-hero */
+/* Header End */
+
+/* Mission Section */
+.mission {
+    /* border: 4px solid red; */
+    display: grid;
+    place-content: center;
+    gap: 4rem;
+    padding-block: 1rem;
+    height: 100vh;    
+    text-align: center;
+}
+.mission > header {
+    display: grid;
+    place-content: center;
+    gap: .5rem;
+}
+.mission > header .title {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.flex-group {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.mis- {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    position: relative;
+    width: 18rem;
+    height: 30rem;
+}
+.miss-ic.bg {
+    z-index: -1;
+    position: absolute;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+/* ANIMATION */
+
+.overlay-text-wrapper {
+    /* border: 1px solid green; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    color: #fff;
+    padding-inline: 1rem;
+    opacity: 0;
+    transition: opacity .3s, justify-content .5s;
+}
+.overlay-text-wrapper:hover {
+    opacity: 1;
+    background: hsl(0 0% 100% / .1);
+    justify-content: center;
+
+}
+@supports (backdrop-filter: blur(.5rem)) {
+    .overlay-text-wrapper:hover:hover {
+        background: hsl(0 0% 100% / .1);
+        backdrop-filter: blur(5px);
+        transition: all .3s;
+    }
+}
+/* Bluring effect */
+/* @supports (backdrop-filter: blur(1rem)) {
+    .hero:hover {
+        background: hsl(0 0% 100% / .1);
+        backdrop-filter: blur(.5rem);
+    }
+} */
